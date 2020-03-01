@@ -35,17 +35,17 @@ public class AuteurController {
 		return auteurs;
 	}
 	
-	@PostMapping(value = "/add") 
+	@PostMapping(value = "/addAuteur") 
 	public void addAuteur(@RequestBody AuteurModel u) {
 		auteurRepository.save(u);
 	}
 	
-	@PutMapping(value = "/update")
+	@PutMapping(value = "/updateAuteur")
 	public void updateAuteur(@RequestBody AuteurModel u) {
 		auteurRepository.save(u);
 	}
 	
-	@DeleteMapping(value = "/delete")
+	@DeleteMapping(value = "/deleteAuteur")
 	public void deleteAuteur(@RequestBody AuteurModel u) {
 		auteurRepository.delete(u);
 	}	

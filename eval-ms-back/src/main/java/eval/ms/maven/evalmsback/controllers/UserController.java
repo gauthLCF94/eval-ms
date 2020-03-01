@@ -35,7 +35,7 @@ public class UserController {
 		return users;
 	}
 	
-	@PostMapping(value = "/add") 
+	@PostMapping(value = "/addUser") 
 	public void addUser(@RequestBody UserModel u) {
 		userRepository.save(u);
 	}
@@ -45,7 +45,7 @@ public class UserController {
 		userRepository.save(u);
 	}
 	
-	@DeleteMapping(value = "/delete")
+	@DeleteMapping(value = "/deleteUser")
 	public void deleteUser(@RequestBody UserModel u) {
 		userRepository.delete(u);
 	}	

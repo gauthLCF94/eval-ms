@@ -34,12 +34,12 @@ public class ArticleController {
 		return Articles;
 	}
 	
-	@PostMapping(value = "/add") 
+	@PostMapping(value = "/addArticle") 
 	public void addArticle(@RequestBody ArticleModel u) {
 		ArticleRepository.save(u);
 	}
 	
-	@PutMapping(value = "/update")
+	@PutMapping(value = "/updateArticle")
 	public void updateArticle(@RequestBody ArticleModel u) {
 		ArticleRepository.save(u);
 	}
