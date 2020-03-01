@@ -1,10 +1,10 @@
-package eval.ms.maven.evalmsauteur;
+package eval.ms.maven.evalmsback;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EvalMsAuteurApplicationTests {
+class EvalMsBackApplicationTests {
 
 	@Test
 	void contextLoads() {
